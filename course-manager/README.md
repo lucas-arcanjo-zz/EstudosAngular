@@ -15,3 +15,11 @@ que esse arquivo é um componente.
 
 Para instalação do bootstrap no angular é necessário utilizar os comandos `npm install bootstrap`
 o Angular dar um pode a mais para o HTML, que é o `*ngFor=""` e o `*ngIf=""`
+
+###
+
+Sempre ao utilizar uma image dentro de uma variável, é necessário utilizar 
+`<img [src]="variável.imagem">`
+
+o Angular, por padrão utiliza o onInit, de forma assíncrona
+o @input faz com que adicione um atributo na tag, e sempre utilizado usando `[]`
