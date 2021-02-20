@@ -23,3 +23,9 @@ Sempre ao utilizar uma image dentro de uma variável, é necessário utilizar
 
 o Angular, por padrão utiliza o onInit, de forma assíncrona
 o @input faz com que adicione um atributo na tag, e sempre utilizado usando `[]`
+
+### O que é Injeção de Dependência?
+Injeção de dependência é um serviço que complementa o home da página inicial, pode haver diversos, para instanciar qualquer parte da aplicação.
+
+### 
+
