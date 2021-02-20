@@ -6,6 +6,7 @@
 - `two way data binding` == quando só quer exibir o valor da propriedade
 - `two way data binding` == exibi e alterar a propriedade, a medida que foi atualizando, vai 
 atualizar em todo aplicação que estiver.
+Para utilização do `two way data binding` ou é necessário utilizar o `[(ngModel)]="valor do atributo para linka"`
 
 ### 
 
@@ -27,5 +28,5 @@ o @input faz com que adicione um atributo na tag, e sempre utilizado usando `[]`
 ### O que é Injeção de Dependência?
 Injeção de dependência é um serviço que complementa o home da página inicial, pode haver diversos, para instanciar qualquer parte da aplicação.
 
-### 
+### Tratando eventos com data binding
 
