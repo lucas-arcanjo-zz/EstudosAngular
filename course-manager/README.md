@@ -66,3 +66,8 @@ todo componente criado em determinado módulo, deve ficar separado no app Module
 uma questão de organização
 
 ### Conhecendo a pasta shared
+É sempre bom separar pastas com componentes e modulos específicos que talvez seja utilizado 
+em nossa aplicação, arquivos genéricos, leves
+
+### Conhecendo a pasta core
+Já a pasta de core são arquivos mais pesados, mais carregados que tenha regra de negócios, etc
