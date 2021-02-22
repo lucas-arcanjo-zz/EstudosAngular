@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { timingSafeEqual } from "crypto";
 import { Courses } from "./courses";
 import { CoursesService } from "./courses.service";
 
@@ -14,11 +13,17 @@ export class CourseInfoComponent implements OnInit {
     constructor(private activatedRoute: ActivatedRoute, private coursesService: CoursesService) {}
 
     ngOnInit(): void {
-        this.courses = this.coursesService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id'));
+        this.coursesService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe({
+            next: courses => this.courses= courses,
+            error: err => console.log('Error', err)
+        });
     }
 
     save(): void {
-        this.coursesService.save(this.courses);
+        this.coursesService.save(this.courses).subscribe({
+            next: courses => console.log('Saved with success', courses),
+            error: err => console.log('Error', err)
+        });
     }
 
 }

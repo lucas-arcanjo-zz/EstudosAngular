@@ -56,3 +56,6 @@ colocar essa rota no TS.
 
 ### Trabalhando com formulários e templates
 pode-se criar variavel de template utilizando `#nomedavariavel` sempre utilizando `[]`
+
+###
+Por padrão, o `HttpClient` sempre retorna um `Observable<>`
