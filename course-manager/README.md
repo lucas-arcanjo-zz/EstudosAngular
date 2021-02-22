@@ -71,3 +71,5 @@ em nossa aplicação, arquivos genéricos, leves
 
 ### Conhecendo a pasta core
 Já a pasta de core são arquivos mais pesados, mais carregados que tenha regra de negócios, etc
+
+### Tratando com erros com Angular
