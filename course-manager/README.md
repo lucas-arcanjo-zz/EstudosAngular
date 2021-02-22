@@ -59,3 +59,10 @@ pode-se criar variavel de template utilizando `#nomedavariavel` sempre utilizand
 
 ###
 Por padrão, o `HttpClient` sempre retorna um `Observable<>`
+
+### Segregando aplicações em módulos
+Pipes padrões do angular são importados por meio no `FormsModule`
+todo componente criado em determinado módulo, deve ficar separado no app Module raiz, por 
+uma questão de organização
+
+### Conhecendo a pasta shared
