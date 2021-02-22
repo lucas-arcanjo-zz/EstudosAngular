@@ -36,4 +36,15 @@ um dos `pipes` padrão no angular é:
     {{ blabla.ble`| lowercase`}}
 Muito imporante para alteração.
 
+###
 
+`RouterModule.forRoot([])` sempre espera um array
+a partir do momento que você faz uma rota, você não precisa mais do selector, que cria um tag
+html, já que a própria rota faz o caminh
+
+o Agular precisa saber onde está sendo feito o swich, a troca de componentes
+por isso é necessário utilizar o `<router-outlet></router-outlet>`
+
+rotas padrão do angular
+`path: '**'` quando não encontrar a rota
+`path ''` quando está na raiz da aplicação
