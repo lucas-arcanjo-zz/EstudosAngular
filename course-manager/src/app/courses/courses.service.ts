@@ -5,11 +5,21 @@ import { Courses } from './courses'
     providedIn: 'root'
 })
 
-
 export class CoursesService {
 
     retrieveAll(): Courses[] {
         return COURSES;
+    }
+
+    retrieveById(id: number): Courses {
+        return COURSES.find((coursesItereator: Courses) => coursesItereator.id === id);
+    }
+
+    save(courses: Courses): void {
+        if (courses.id) {
+            const index = COURSES.findIndex((courseIterator: Courses) => courseIterator.id === course.id);
+            COURSES[index] = courses;
+        }
     }
 }
 

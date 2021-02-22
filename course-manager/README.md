@@ -53,3 +53,6 @@ rotas padrão do angular
 Podemos ativar rotas acessando componentes, utiilzar no html o `[routerLink]=""`e após isso, 
 colocar essa rota no TS.
 `routerLinkActive`
+
+### Trabalhando com formulários e templates
+pode-se criar variavel de template utilizando `#nomedavariavel` sempre utilizando `[]`

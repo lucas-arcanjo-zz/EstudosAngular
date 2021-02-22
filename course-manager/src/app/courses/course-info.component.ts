@@ -1,18 +1,24 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { timingSafeEqual } from "crypto";
+import { Courses } from "./courses";
+import { CoursesService } from "./courses.service";
 
 @Component({
-    templateUrl: './couse-info.component.html'
+    templateUrl: './course-info.component.html'
 })
 export class CourseInfoComponent implements OnInit {
     
-    courseId: number;
+    courses: Courses;
 
-    constructor(private ActivatedRoute: ActivatedRoute) {}
+    constructor(private activatedRoute: ActivatedRoute, private coursesService: CoursesService) {}
 
     ngOnInit(): void {
-        this.courseId = +this.ActivatedRoute.snapshot.paramMap.get('id');
+        this.courses = this.coursesService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id'));
     }
 
+    save(): void {
+        this.coursesService.save(this.courses);
+    }
 
 }
