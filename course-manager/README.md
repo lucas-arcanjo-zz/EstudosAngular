@@ -48,3 +48,8 @@ por isso é necessário utilizar o `<router-outlet></router-outlet>`
 rotas padrão do angular
 `path: '**'` quando não encontrar a rota
 `path ''` quando está na raiz da aplicação
+
+### Ativando Rotas para acessar Componentes
+Podemos ativar rotas acessando componentes, utiilzar no html o `[routerLink]=""`e após isso, 
+colocar essa rota no TS.
+`routerLinkActive`
