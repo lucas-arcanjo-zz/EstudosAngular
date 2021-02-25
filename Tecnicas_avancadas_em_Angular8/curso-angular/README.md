@@ -1,7 +1,9 @@
 # Inicio do Projeto
 
-
-
+O que é um `FormBuilder`?
+    É um conjunto de informações responsável por criar um formulário, onde ajuda o angular, a 
+    manipular as informações contidas dentro.
+Uma dessas informações dentro do `FormBuilder` é o `group()` que retorna um `FormGroup`.
 
 
 
