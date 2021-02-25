@@ -5,6 +5,9 @@ O que é um `FormBuilder`?
     manipular as informações contidas dentro.
 Uma dessas informações dentro do `FormBuilder` é o `group()` que retorna um `FormGroup`.
 
+# Adicionando validações ao nosso formulário
+`Form field` Usado para apresentar erro, nas validações de campos obrigatórios ou que tenha outra condição
+selector/tag utilizada `<mat-error>`
 
 
 
