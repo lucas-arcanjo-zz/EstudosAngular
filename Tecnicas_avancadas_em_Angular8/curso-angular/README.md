@@ -7,8 +7,11 @@ Uma dessas informações dentro do `FormBuilder` é o `group()` que retorna um `
 
 # Adicionando validações ao nosso formulário
 `Form field` Usado para apresentar erro, nas validações de campos obrigatórios ou que tenha outra condição
-selector/tag utilizada `<mat-error>`
+selector/tag utilizada `<mat-error>
 
+# Elvis operator (navegação segura)
+o que caractere `?` em HTML é muito usado para limitar erros, ele irá ver a lógica contida até chegar nele, se não tiver nenhum 
+erro, ele para aonde está.
 
 
 
