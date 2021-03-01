@@ -13,6 +13,14 @@ selector/tag utilizada `<mat-error>
 o que caractere `?` em HTML é muito usado para limitar erros, ele irá ver a lógica contida até chegar nele, se não tiver nenhum 
 erro, ele para aonde está.
 
+# Serviço para validação de erros
+Sempre ao criar um `service`, e dentro dele, há um `@injectable({ provideIn: 'root'})`. Ele é a 
+parte principal do sistema, ou seja, qualquer parte do sistema poderar usar o serviço.
+
+# 
+
+
+
 
 
 
