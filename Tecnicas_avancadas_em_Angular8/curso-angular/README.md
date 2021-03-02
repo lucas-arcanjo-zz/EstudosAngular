@@ -18,6 +18,9 @@ Sempre ao criar um `service`, e dentro dele, há um `@injectable({ provideIn: 'r
 parte principal do sistema, ou seja, qualquer parte do sistema poderar usar o serviço.
 
 # 
+A ideia do angular é sempre componentizar objetos, para reutilizar
+Componentizar facilita o trabalho do desenvolvedor, e deixa o HTML do component mais limpo.
+
 
 
 
