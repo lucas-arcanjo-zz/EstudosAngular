@@ -10,6 +10,7 @@ import { ValidarCamposService } from 'src/app/shared/components/validar-campos.s
 export class CadastroFilmesComponent implements OnInit {
 
   cadastro: FormGroup;
+  generos: Array<string>;
 
   constructor(public validacao: ValidarCamposService,
              private fb: FormBuilder) { }
@@ -30,6 +31,7 @@ export class CadastroFilmesComponent implements OnInit {
       genero: ['', [Validators.required]]
     });
 
+    this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção cientifica', 'Comédia', 'Drama'];
   }
   
   salvar(): void {
