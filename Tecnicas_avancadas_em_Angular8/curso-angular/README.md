@@ -24,7 +24,8 @@ Componentizar facilita o trabalho do desenvolvedor, e deixa o HTML do component 
 #
 Todo método post esperasse inicialmente uma url
 
-
+#
+entryComponents: []
 
 
 
