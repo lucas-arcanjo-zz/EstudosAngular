@@ -21,7 +21,8 @@ parte principal do sistema, ou seja, qualquer parte do sistema poderar usar o se
 A ideia do angular é sempre componentizar objetos, para reutilizar
 Componentizar facilita o trabalho do desenvolvedor, e deixa o HTML do component mais limpo.
 
-
+#
+Todo método post esperasse inicialmente uma url
 
 
 
