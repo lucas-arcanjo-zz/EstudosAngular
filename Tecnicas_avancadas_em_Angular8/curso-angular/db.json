@@ -239,6 +239,26 @@
       "urlIMDB": "",
       "genero": "Terror",
       "id": 24
+    },
+    {
+      "titulo": "tester",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-01T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 25
+    },
+    {
+      "titulo": "te",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 26
     }
   ]
 }
