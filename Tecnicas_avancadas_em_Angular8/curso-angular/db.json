@@ -169,6 +169,76 @@
       "urlIMDB": "testeteste",
       "genero": "Ação",
       "id": 17
+    },
+    {
+      "titulo": "tesrtete",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "te",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Ficção cientifica",
+      "id": 18
+    },
+    {
+      "titulo": "gsdgdsg",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 19
+    },
+    {
+      "titulo": "fsdgfdsg",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 20
+    },
+    {
+      "titulo": "dfhdfh",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Comédia",
+      "id": 21
+    },
+    {
+      "titulo": "ghdfsghdfh",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "hdfhdf",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 22
+    },
+    {
+      "titulo": "efwefwef",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 23
+    },
+    {
+      "titulo": "gdfgd",
+      "urlFoto": "",
+      "dtLancamento": "2021-03-02T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDB": "",
+      "genero": "Terror",
+      "id": 24
     }
   ]
 }
