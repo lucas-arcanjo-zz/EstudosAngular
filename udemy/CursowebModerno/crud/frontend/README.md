@@ -1,27 +1,55 @@
-# Frontend
+# Elementos Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+Componentes
+Diretivas
+Rotas
+Pipes
+Observables
+Services
 
-## Development server
+Componente é formado por `html`, `css`, `ts`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Diretivas de Atributo
+Altera a **aparênca** e o *comportamento* de um elemento, componente ou outra diretiva.
 
-## Code scaffolding
+## Diretiva Estrutural
+Altera o layout **adicionando** e *removendo* elementos da DOM
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+bind == ligação 
 
-## Build
+property binding === []
+event binding === ()
+One Way data binding === o html procura no ts se há uma variável com esse nome, para seu valor (ts para o html)
+Two Way data binding === [()] já esse altera dos dois lados, não somente o html
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Router
+sempre que clicamos em um elemento (Ex: produto), a router vai fazer o carregamento desse component, e sempre que 
+trocar, para um outro, o angular utilizar o `router outlet` 
 
-## Running unit tests
+## Pipes
+utilizado para fazer uma conversão de algum atributo, seja em data, real. Além disso, pode-se utilizar uma conceito 
+chamado de chaining, ou encadeamento, queria seria uma conversão inicialmente, e depois um complemento, como 
+`uppercase`, depois de fazer a conversão, deixar tudo em letras maiúsculas.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Programação Reativa
+No angular, e em muitos outros frameworks, é utilizado um outro framework chamado de `Reactive X`, ou programação
+reativa.
+o padrão observer é orientado a evento
 
-## Running end-to-end tests
+### Entendendo Observables
+callbacks === uma callback dentro de outra callback pode dificultar a manutenção do código
+promises === pode ser utilizado uma vez
+observables === observables é `reusável`, tem `stream dados` e `operadores`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+sempre quando se mexe em `callbacks, promises, observables`, via de regra, está trabalhando com código assíncrono.
 
-## Further help
+## O que são Services?
+São classes que têm como principal objetivo **organizar** e **compartilhar** métodos e dados entre `componentes`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+existem padrões de projeto como `singleton`, `design patterns` no angular é usando o providedIn: "root", como padrão,
+é uma forma de criar apenas uma instância de uma classe.
+
+### Injeção de Dependência 
+É um padrão no qual a classe recebe *dependências* de uma **fonte externa**, ao invés de criar por conta própria.
+
+![image](https://user-images.githubusercontent.com/61436988/119047295-1abfae00-b994-11eb-98dd-dbf162384149.png)
