@@ -53,3 +53,8 @@ existem padrões de projeto como `singleton`, `design patterns` no angular é us
 É um padrão no qual a classe recebe *dependências* de uma **fonte externa**, ao invés de criar por conta própria.
 
 ![image](https://user-images.githubusercontent.com/61436988/119047295-1abfae00-b994-11eb-98dd-dbf162384149.png)
+
+### Model, Service
+Model é um objeto que se espera preencher para ter ligação com o backend, em interfaces, propriedades que não são
+obrigatórios, é colocado um `?`. 
+`Ex: id?: number`
