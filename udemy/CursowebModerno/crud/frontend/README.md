@@ -58,3 +58,9 @@ existem padrões de projeto como `singleton`, `design patterns` no angular é us
 Model é um objeto que se espera preencher para ter ligação com o backend, em interfaces, propriedades que não são
 obrigatórios, é colocado um `?`. 
 `Ex: id?: number`
+
+### Dica
+ - Procure pela documentação do Angular
+ - Procure também suas ferramentas, como o Angular material, Angular shematics
+ - Enteder mais sobre páginação, já que o json-server suporta páginação, não faria sentido receber 2000 dados de uma
+vez no front end, já que precisa ser feito páginação para não perde tanta banda.
