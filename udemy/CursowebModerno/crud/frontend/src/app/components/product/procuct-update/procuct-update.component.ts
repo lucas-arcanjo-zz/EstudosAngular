@@ -17,11 +17,15 @@ export class ProcuctUpdateComponent implements OnInit {
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
     this.productService.readById(id).subscribe(product => {
-       this.product = product
+      this.product = product
     });
   }
 
   updateProduct(): void {
+    this.productService.uptade(this.product).subscribe(() => {
+      this.productService.showMessage('Produto atualizado com sucesso')
+      this.router.navigate(['/products']);
+    })
   }
 
   cancel(): void {
