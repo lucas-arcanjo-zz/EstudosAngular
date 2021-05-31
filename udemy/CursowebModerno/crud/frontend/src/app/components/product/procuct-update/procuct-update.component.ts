@@ -10,12 +10,12 @@ import { ProductService } from '../product.service';
 })
 export class ProcuctUpdateComponent implements OnInit {
 
-  product: Product
+  product: Product;
 
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
+    const id = +this.route.snapshot.paramMap.get('id')
     this.productService.readById(id).subscribe(product => {
       this.product = product
     });
