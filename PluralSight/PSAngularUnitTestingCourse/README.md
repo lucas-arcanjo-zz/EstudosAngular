@@ -53,3 +53,19 @@ Jasmine já é a ferramenta que usamos para criar mocks
 
 Existem outras ferramentas para test,  como o `Jest`, também tem o `Mocha`, `Chai` que podem substituir o Jasmine.
 também há o `Sinon`, `TestDouble`, `wallaby`, `cypress`.
+
+# Mão Na Massa
+
+`describe()` recebe dois parâmetros: uma `string`, e uma `função callback` que estará os testes
+
+`beforeEach()` apenas recebe o retorno da chamada do describe(), é uma boa pratica iniciar uma variável no 
+describe(), e fazer ela retonar vazio no beforeEach(), para não ter problemas testando outros testes.
+
+`it()` assim como o describe, é usado dois parâmetros: uma `string`, do que deve ser feito, em geral, é iniciado com a 
+palavra 'deve' inicialmente. e o segundo é uma `callback`
+
+`expect()` espera um determinado resultado
+
+`toBe()` afirma que é true;
+
+Para executar tests, pode usar o comando `ng test`, ou `npm test`, em seguida irá abrir uma página do karma.
