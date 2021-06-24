@@ -94,3 +94,9 @@ Segue os princípios do `DRY`, mas o código é repetido, sí necessário
 
 Teste isolado é testar apenas a classe do component/pipe/service, não necessáriamente testar decorators, apenas
 a classe. Isso é um teste isolado
+
+### Teste de integração
+
+`Testbed` é o que nos permite testar o componente e seu modelo juntos.
+`NO_ERRORS_SCHEMA` usado para ocultar problemas, mas tem seus perigos, sempre que usar tenha total certeza do que 
+deseja, pois pode ocultar erros importantes.
