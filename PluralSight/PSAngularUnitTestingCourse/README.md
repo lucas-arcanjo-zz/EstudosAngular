@@ -69,3 +69,28 @@ palavra 'deve' inicialmente. e o segundo é uma `callback`
 `toBe()` afirma que é true;
 
 Para executar tests, pode usar o comando `ng test`, ou `npm test`, em seguida irá abrir uma página do karma.
+
+### Writing good Unit Testing
+
+Existem alguns princípios de escrever bons testes de unidade.
+
+Uma delas, é primeiro saber como estrutura um teste. Testes de estruturação seguem o que é chamado de padrão AAA.
+
+1 - _Arrange_ todas as pré-condições e entrada necessárias.
+2 - _Act_(Action) no objeto ou classe sob teste.
+3 - _Asserts_ que os resultados esperados ocorreram.
+
+`DRY` (don't repeat yourself)
+
+O DRY, ou não se repita, é um conceito comum usado em programação, quando seguimos o princípio do DRY:
+    - Removemos a duplicação de código
+Porém, bons testes operam sob um princípio diferente, chamado `DAMP`.
+
+`DAMP`
+
+Segue os princípios do `DRY`, mas o código é repetido, sí necessário  
+
+### Teste isolado
+
+Teste isolado é testar apenas a classe do component/pipe/service, não necessáriamente testar decorators, apenas
+a classe. Isso é um teste isolado
