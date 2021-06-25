@@ -100,3 +100,5 @@ a classe. Isso é um teste isolado
 `Testbed` é o que nos permite testar o componente e seu modelo juntos.
 `NO_ERRORS_SCHEMA` usado para ocultar problemas, mas tem seus perigos, sempre que usar tenha total certeza do que 
 deseja, pois pode ocultar erros importantes.
+`detectChanges()` usado para detectatar mudança em um component, muito usado para tag html que recebem 
+um valor `{{value}}`
