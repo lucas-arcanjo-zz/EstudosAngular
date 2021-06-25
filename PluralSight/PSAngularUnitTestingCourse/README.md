@@ -100,5 +100,13 @@ a classe. Isso é um teste isolado
 `Testbed` é o que nos permite testar o componente e seu modelo juntos.
 `NO_ERRORS_SCHEMA` usado para ocultar problemas, mas tem seus perigos, sempre que usar tenha total certeza do que 
 deseja, pois pode ocultar erros importantes.
+`fixture` usado para acessar um component já existente, um wrapper(embrulho) em torno de outra coisa.
+o fixture, alem de ter a propriedade nativeElement, ele possui também o debugElement, que assim como o nativeElement, 
+tem acesso DOM, mas seu acesso é como um wrapper(embrulho) em torno do nó do DOM real.
+Quando queremos encontrar um elemento específico, podemos usar o `nativeElement.querySelector('tagX')`, ou 
+o `debugElement.query(By.css('tagX'))`
+o `debugElement` é usado da mesma forma que o `fixture`, ele faz um wrapper, por exemplo de um routerLink, e pode lidar
+com diversos componentes.
+
 `detectChanges()` usado para detectatar mudança em um component, muito usado para tag html que recebem 
 um valor `{{value}}`
