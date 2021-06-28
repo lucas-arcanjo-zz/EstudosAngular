@@ -74,7 +74,7 @@ Para executar tests, pode usar o comando `ng test`, ou `npm test`, em seguida ir
 
 Existem alguns princípios de escrever bons testes de unidade.
 
-Uma delas, é primeiro saber como estrutura um teste. Testes de estruturação seguem o que é chamado de padrão AAA.
+Uma delas, é primeiro saber como estruturar um teste. Testes de estruturação seguem o que é chamado de padrão AAA.
 
 1 - _Arrange_ todas as pré-condições e entrada necessárias.
 2 - _Act_(Action) no objeto ou classe sob teste.

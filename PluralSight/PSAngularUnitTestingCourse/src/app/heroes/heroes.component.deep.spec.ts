@@ -30,12 +30,17 @@ describe('HeroesComponent (shallow tests)', () => {
             schemas: [NO_ERRORS_SCHEMA]
         })
         fixture = TestBed.createComponent(HeroesComponent);
-        mockHeroService.getHeroes.and.returnValue(of(HEROES));
-        
-        fixture.detectChanges();
+
     })
 
-    it('should be true', () => {
-        expect(true).toBe(true);
+    it('should render each hero as HeroComponent', () => {
+        mockHeroService.getHeroes.and.returnValue(of(HEROES));
+
+        fixture.detectChanges();
+
+        const heroComponentDEs = fixture.debugElement.queryAll(By.directive(HeroComponent))
+        for (let i = 0; i < heroComponentDEs.length; i++) {
+            expect(heroComponentDEs[i].componentInstance.hero).toEqual(HEROES[i]);
+        }
     })
 });
