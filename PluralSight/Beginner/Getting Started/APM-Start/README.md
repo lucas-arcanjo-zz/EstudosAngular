@@ -46,3 +46,26 @@ export class myComponent `_implements_` DoTiming {
     count....
     strop()...
 }
+
+### for...of vs for...in
+
+_for...of_
+```
+let nicknames = ['di', 'boo', 'punkeye'];
+for (let nickname of nicknames) {
+    console.log(nickname);
+}
+```
+Iterates over iterable objects, such as an array
+ - result: `di, boo, punkeye`
+
+_for...in_
+```
+let nicknames = ['di', 'boo', 'punkeye'];
+for (let nickname in nicknames) {
+    console.log(nickname);
+}
+```
+Iterates over iterable the properties, of an object
+ - result: `0, 1, 2`
+
