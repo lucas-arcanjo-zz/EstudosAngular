@@ -1,3 +1,5 @@
+## Form Template
+
 ### Using NgForm
 
 A diretiva `ngForm` nos dá informações valiosas do nosso formulário de template.
@@ -13,3 +15,8 @@ para ver todas as propriedades do `ngForm` é necessário utilizar o seguinte co
 Exemplo:
 ``{{ form | json }}``
 fazendo isso, apresentarar na na tela as propriedades
+
+### Using NgModel
+
+A diretiva `ngModel` é colocada em todos os campos que queremos que o Angular saiba, o ngModel nos ajuda a construir o objeto
+de valores que vimos no exemplo anterior.
