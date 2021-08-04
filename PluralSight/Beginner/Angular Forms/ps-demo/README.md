@@ -25,3 +25,19 @@ de valores que vimos no exemplo anterior.
 
 a diretiva `ngModel` sendo utilizada da forma `[(ngModel)]` consegue receber tanto as alterações do arquivo ts, como atualizar o arquivo html, duas vias 
 que podem se comunicar.
+
+# Copying Form Data
+
+Se queremos mostrar ao usuário um formulário pre-pronto, e se ele fizer alterações, ou cancelar, ou voltar o dados que ele alterou vão apresentar no formulário, caso abra novamente, para isso, existe uma copia, que pode ser sempre usada para não perder o formulário original.
+ex... 
+```
+  originalUserSettings: UserSettings = {
+    name: 'Lucas',
+    emailOffers: true,
+    interfaceStyle: 'dark',
+    subscriptionType: 'Annual',
+    notes: 'here are some notes...'
+  };
+
+  userSettings: UserSettings = { ...this.originalUserSettings }
+```
