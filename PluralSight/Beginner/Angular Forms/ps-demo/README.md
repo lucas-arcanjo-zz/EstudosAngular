@@ -20,6 +20,7 @@ fazendo isso, apresentarar na na tela as propriedades
 
 A diretiva `ngModel` é colocada em todos os campos que queremos que o Angular saiba, o ngModel nos ajuda a construir o objeto
 de valores que vimos no exemplo anterior.
+obs... o atributo `name` é obrigatório
 
 ### Two-way-data-binding
 
@@ -41,3 +42,5 @@ ex...
 
   userSettings: UserSettings = { ...this.originalUserSettings }
 ```
+isso é uma propagação em JS, isso fez uma cópia do objeto original e armazenou me um objeto, caso queira fazer uma 
+cópia mais profunda, poderia usar o utilitário como o Lodash com sua função clone profunda
