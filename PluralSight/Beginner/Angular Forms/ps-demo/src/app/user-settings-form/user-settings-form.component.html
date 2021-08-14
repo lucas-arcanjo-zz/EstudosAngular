@@ -1,10 +1,10 @@
 <div class="container">
   <h2>User Settings</h2>
-  <form #form="ngForm">
+  <form #form="ngForm" ngNativeValidate>
 
     <div class="form-group">
       <label for="name">Name</label>
-      <input id="name" [(ngModel)]="userSettings.name" name="name" class="form-control">
+      <input id="name" required [(ngModel)]="userSettings.name" name="name" class="form-control">
     </div>
 
     <div class="form-check mb-3 mt-2">
