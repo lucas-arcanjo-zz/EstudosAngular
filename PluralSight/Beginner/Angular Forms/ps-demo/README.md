@@ -60,3 +60,14 @@ isso nos permite especificar uma expressão regular que pode ser usada como padr
 `pattern="B.*"`
 no ex acima, o a campo é necessário começar com a letra B e, 
 
+### CSS Classes for Validation
+
+O angular, sempre utiliza debaixo dos panos sempre classes quando estamos utilizando um formulário, são elas:
+
+ng-untouched
+ng-touched
+ng-pristine
+ng-dirty
+ng-valid
+ng-invalid
+
