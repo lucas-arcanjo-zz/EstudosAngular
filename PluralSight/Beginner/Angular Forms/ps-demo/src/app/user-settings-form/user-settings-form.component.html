@@ -4,18 +4,11 @@
 
     <div class="form-group">
       <label for="name">Name</label>
-      <input  [(ngModel)]="userSettings.name" name="tes" class="form-control" required #propertyTest="ngModel"
-      [class.field-error]="form.submitted && propertyTest.invalid" >
+      <input  [(ngModel)]="userSettings.name" name="name" id="name" class="form-control" required #propertyTest="ngModel"
+      [class.field-error]="form.submitted && propertyTest.invalid"
+      (blur)="onBlur(propertyTest)" >
       <div [hidden]="!form.submitted || propertyTest.valid" class="alert alert-danger">Enter a name</div>
     </div>
-
-    <h3>test : {{ form.submitted }}</h3>
-    <h3>dirty : {{ propertyTest.dirty }}</h3>
-    <h3>pristine : {{ propertyTest.pristine }}</h3>
-    <h3>touched : {{ propertyTest.touched }}</h3>
-    <h3>untouched : {{ propertyTest.untouched }}</h3>
-    <h3>valid : {{ propertyTest.valid }}</h3>
-    <h3>invalid : {{ propertyTest.invalid }}</h3>
 
     <div class="form-check mb-3 mt-2">
       <input class="form-check-input" [(ngModel)]="userSettings.emailOffers" type="checkbox" id="emailOffers" name="emailOffers">

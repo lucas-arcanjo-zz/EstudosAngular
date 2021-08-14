@@ -70,4 +70,3 @@ ng-pristine
 ng-dirty
 ng-valid
 ng-invalid
-
