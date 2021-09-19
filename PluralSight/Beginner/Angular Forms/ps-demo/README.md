@@ -96,6 +96,7 @@ utilizar essas classes, ou propriedades ngModel, ou outros recursos para estiliz
 no terminal coloque o comando do angular CLI: ng g s `nomeDaService`
 
 ### Form Posting Using Observables
+Observables em angular é uma forma assíncrona de trabalhar com dados, bem parecido com as Promisses, em JavaScript
 
 ### HTTP Acess Using HttpClient
 
