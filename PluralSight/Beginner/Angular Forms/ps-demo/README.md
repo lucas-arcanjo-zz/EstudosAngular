@@ -92,3 +92,15 @@ utilizar essas classes, ou propriedades ngModel, ou outros recursos para estiliz
 
 ## (6) HTTP Form Posting and Data Access
 
+### Create a Data Service
+no terminal coloque o comando do angular CLI: ng g s `nomeDaService`
+
+### Form Posting Using Observables
+
+### HTTP Acess Using HttpClient
+
+### Post a Form Using HttpClient
+
+### Handling POST Erros
+
+### Retrieve Data For Select Elements
