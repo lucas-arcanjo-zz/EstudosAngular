@@ -102,6 +102,14 @@ Observables em angular é uma forma assíncrona de trabalhar com dados, bem pare
 para utilização do httpClient, é necessário primeiro importá-lo no module da sua aplicação, importando o HttpClientModule, depois disso, utilize na sua classe de serviço.
 
 ### Post a Form Using HttpClient
+Uma forma de ter um servidor funcionando, pra teste, é utilizando o site _https://putsreq.com/_, lá pode criar uma Url para sua service, e utiliza-la para ver o retorno de seu objeto.
+Caso tente novamente, siga o code na parte Response Builder: 
+```
+var parsedBody = JSON.parse(request.body);
+parsedBody.id = '1';
+response.body = parsedBody;
+```
+depois de fazer a requição, veja no seu objeto as alterações que fez na hora do envio, também, a quantidade de request que fez.
 
 ### Handling POST Erros
 
