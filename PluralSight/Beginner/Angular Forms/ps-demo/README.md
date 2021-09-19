@@ -99,6 +99,7 @@ no terminal coloque o comando do angular CLI: ng g s `nomeDaService`
 Observables em angular é uma forma assíncrona de trabalhar com dados, bem parecido com as Promisses, em JavaScript
 
 ### HTTP Acess Using HttpClient
+para utilização do httpClient, é necessário primeiro importá-lo no module da sua aplicação, importando o HttpClientModule, depois disso, utilize na sua classe de serviço.
 
 ### Post a Form Using HttpClient
 
