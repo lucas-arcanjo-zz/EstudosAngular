@@ -134,6 +134,7 @@ Um outro ponto muito interessante é que na sessão comunidades, há um reposit�
 que possui componentes incríveis, de qualquer componente que precisa.
 
 ### Installing and Using ngx-bootstrap
+indo até a documentação do UI que deseja por em seu projeto, haverá um comando específico de um component, por exemplo, esse se aplica a buttons, então o comando seria `ng add ngx-bootstrap --component buttons`, específicando um unico componente, não precisamos integrar toda a biblioteca em nosso projeto.
 
 ### Working with Buttons
 

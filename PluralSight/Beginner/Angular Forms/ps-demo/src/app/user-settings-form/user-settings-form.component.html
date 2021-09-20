@@ -10,6 +10,12 @@
       <div [hidden]="!form.submitted || propertyTest.valid" class="alert alert-danger">Enter a name</div>
     </div>
 
+    <button type="button" class="btn btn-primary" name="singleModel"
+        [(ngModel)]="singleModel" btnCheckbox
+        btnCheckboxTrue="On" btnCheckboxFalse="Off">
+      {{ singleModel }}
+    </button>
+
     <div class="form-check mb-3 mt-2">
       <input class="form-check-input" [(ngModel)]="userSettings.emailOffers" type="checkbox" id="emailOffers" name="emailOffers">
       <label class="form-check-label" for="emailOffers">
