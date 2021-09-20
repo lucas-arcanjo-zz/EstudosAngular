@@ -18,20 +18,32 @@ export class UserSettingsFormComponent implements OnInit {
     notes: null
   };
 
-  userSettings: UserSettings = { ...this.originalUserSettings }
-
+  userSettings: UserSettings = { ...this.originalUserSettings };
+  postError: boolean = false;
+  postErrorMessage: string = '';
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
   }
 
+  onHttpError(errorResponse) {
+    console.log('error', errorResponse)
+    this.postError = true
+    this.postErrorMessage = errorResponse.error.errorMessage
+  }
+
   onSubmit(form: NgForm) {
     console.log('onSubmit', form.valid);
-    this.dataService.postUserSettingsForm(this.userSettings).subscribe(
-      result => console.log('Success', result),
-      error => console.log('error', error)
-    );
+    if (form.valid) {
+      this.dataService.postUserSettingsForm(this.userSettings).subscribe(
+        result => console.log('Success', result),
+        error => this.onHttpError(error)
+      );
+    } else {
+      this.postError = true;
+      this.postErrorMessage = 'Please fix the above errors'
+    }
   }
 
   onBlur(field: NgModel) {

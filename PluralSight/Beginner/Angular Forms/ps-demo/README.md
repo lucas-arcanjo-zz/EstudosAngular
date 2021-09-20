@@ -112,5 +112,9 @@ response.body = parsedBody;
 depois de fazer a requição, veja no seu objeto as alterações que fez na hora do envio, também, a quantidade de request que fez.
 
 ### Handling POST Erros
+Muita vezes, pode haver erros na aplicação, por isso use bem o console, e veja as mensagens apresentadas, para um 
+usuário, é necessário apresentar uma mensagem a ele, por isso, existem formas de usar a mesma mensagem de error do 
+servidor para o usuário, usando uma propriedade `boolean`, pra apresenta se houve erro, ou não, e uma outra 
+propriedade como `string`, que aprensente a mensagem
 
 ### Retrieve Data For Select Elements
