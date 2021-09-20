@@ -124,3 +124,21 @@ service, podemos colocar um `| async` , para aguardar a resposta da service, a a
 houver errors.
 mensagem de error no console:
 `ERROR Error: Cannot find a differ supporting object '[object Object]' of type 'object'. NgFor only supports binding to Iterables such as Arrays.` 
+
+## (7) Third-party Form Controls
+
+### Form Resources at angular.io
+No site _https://angular.io_ existem muitos recursos importantes que podem implementar seu projeto, no caso de `UI Components(User Interface Components)`,
+um dos mais usados é o `angular material`, `ng-bootstrap`, `ngx-bootstrap` e o `prime Faces`.
+Um outro ponto muito interessante é que na sessão comunidades, há um repositório no github, (_https://github.com/brillout/awesome-angular-components_),
+que possui componentes incríveis, de qualquer componente que precisa.
+
+### Installing and Using ngx-bootstrap
+
+### Working with Buttons
+
+### Date and Date Ranges
+
+### Timepicker
+
+### Rating
