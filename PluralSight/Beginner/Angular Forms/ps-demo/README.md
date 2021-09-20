@@ -118,3 +118,9 @@ servidor para o usuário, usando uma propriedade `boolean`, pra apresenta se hou
 propriedade como `string`, que aprensente a mensagem
 
 ### Retrieve Data For Select Elements
+no rxjs existem formas de conseguir os dados, uma delas é utilizando o `of`, se tiver um `ngFor` em nosso html, e 
+a propriedade que estamos preenchendo é do tipo observable, ou seja, ela está sendo preenchida a partir de uma 
+service, podemos colocar um `| async` , para aguardar a resposta da service, a assim preenche os dados para não 
+houver errors.
+mensagem de error no console:
+`ERROR Error: Cannot find a differ supporting object '[object Object]' of type 'object'. NgFor only supports binding to Iterables such as Arrays.` 

@@ -42,9 +42,9 @@
     <div class="form-group mt-3 mb-3">
       <label class="mb-2" for="subscriptionType">Subscription Type</label>
       <select class="form-control" [(ngModel)]="userSettings.subscriptionType" name="subscriptionType" id="subscriptionType">
-        <option>Monthly</option>
-        <option>Annual</option>
-        <option>Lifetime</option>
+        <option *ngFor="let item of subscriptionTypes | async">
+          {{ item }}
+        </option>
       </select>
     </div>
     
