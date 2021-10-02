@@ -23,7 +23,7 @@ export class UserSettingsFormComponent implements OnInit {
   postError: boolean = false;
   postErrorMessage: string = '';
   subscriptionTypes: Observable<string[]>
-  singleModel: string = "On"
+  singleModel: string = "1"
 
   constructor(private dataService: DataService) { }
 
@@ -38,16 +38,16 @@ export class UserSettingsFormComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log('onSubmit', form.valid);
-    if (form.valid) {
-      this.dataService.postUserSettingsForm(this.userSettings).subscribe(
-        result => console.log('Success', result),
-        error => this.onHttpError(error)
-      );
-    } else {
-      this.postError = true;
-      this.postErrorMessage = 'Please fix the above errors'
-    }
+    console.log('onSubmit', form.value);
+    // if (form.valid) {
+    //   this.dataService.postUserSettingsForm(this.userSettings).subscribe(
+    //     result => console.log('Success', result),
+    //     error => this.onHttpError(error)
+    //   );
+    // } else {
+    //   this.postError = true;
+    //   this.postErrorMessage = 'Please fix the above errors'
+    // }
   }
 
   onBlur(field: NgModel) {

@@ -9,12 +9,12 @@
       (blur)="onBlur(propertyTest)" >
       <div [hidden]="!form.submitted || propertyTest.valid" class="alert alert-danger">Enter a name</div>
     </div>
-
+<!-- 
     <button type="button" class="btn btn-primary" name="singleModel"
         [(ngModel)]="singleModel" btnCheckbox
-        btnCheckboxTrue="On" btnCheckboxFalse="Off">
+        btnCheckboxTrue=1 btnCheckboxFalse=2>
       {{ singleModel }}
-    </button>
+    </button> -->
 
     <div class="form-check mb-3 mt-2">
       <input class="form-check-input" [(ngModel)]="userSettings.emailOffers" type="checkbox" id="emailOffers" name="emailOffers">
@@ -25,24 +25,15 @@
 
     <p>User Interface Style</p>
     <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" [(ngModel)]="userSettings.interfaceStyle" type="radio" name="interfaceStyle" id="lightInterface" value="light" checked>
-        <label class="form-check-label" for="lightInterface">
-          Light
-        </label>
+      <div class="btn-group">
+        <label class="btn btn-primary" [(ngModel)]="userSettings.interfaceStyle" btnCheckbox tabindex="0" name="interfaceStyle" btnRadio="Light"
+          role="button">Light</label>
+        <label class="btn btn-primary" [(ngModel)]="userSettings.interfaceStyle" btnCheckbox tabindex="0" name="interfaceStyle" btnRadio="Medium"
+          role="button">Medium</label>
+        <label class="btn btn-primary" [(ngModel)]="userSettings.interfaceStyle" btnCheckbox tabindex="0"  name="interfaceStyle" btnRadio="Dark"
+          role="button">Dark</label>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" [(ngModel)]="userSettings.interfaceStyle" type="radio" name="interfaceStyle" id="mediumInterface" value="medium">
-        <label class="form-check-label" for="mediumInterface">
-          Medium
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" [(ngModel)]="userSettings.interfaceStyle" type="radio" name="interfaceStyle" id="darkInterface" value="dark">
-        <label class="form-check-label" for="darkInterface">
-          Dark
-        </label>
-      </div>
+
     </div>
 
     <div class="form-group mt-3 mb-3">
